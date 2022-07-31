@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="617.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Visualize">
+    <children>
+        <BorderPane layoutX="-408.0" layoutY="46.0" prefHeight="384.0" prefWidth="466.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <ToolBar BorderPane.alignment="CENTER">
+                    <items>
+                        <Button fx:id="btnBack" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="%visualize.back_btn_label" />
+                        <Pane HBox.hgrow="SOMETIMES" />
+                        <Button fx:id="play_btn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="25.0" prefWidth="43.0" text="▶" wrapText="true" />
+                  <Button fx:id="rec_btn" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="25.0" prefWidth="41.0" text="⏺" />
+                    </items>
+                </ToolBar>
+            </top>
+            <center>
+                <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
